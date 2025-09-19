@@ -30,7 +30,7 @@ function renderTodos() {
             <div class="flex items-center gap-3">
               <input type="checkbox" ${
                 todo.complete ? "checked" : ""
-              } class="w-5 h-5 text-teal-600 border-gray-300 rounded focus:ring-teal-500 toggle-status" data-index="${index}" />
+              } class="w-5 h-5 text-teal-600 cursor-pointer border-gray-300 rounded focus:ring-teal-500 toggle-status" data-index="${index}" />
               <div>
                 <p class="font-medium ${
                   todo.complete ? "line-through text-gray-500" : ""
