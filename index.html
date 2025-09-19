@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 font-poppins">
+    <!-- Header -->
+    <header class="bg-teal-600 py-4 shadow-md">
+      <div class="container mx-auto px-6 flex justify-center">
+        <h1 class="text-xl md:text-2xl font-semibold text-white">
+          To-Do List App
+        </h1>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-grow flex justify-center items-start p-6">
+      <div
+        class="flex flex-col gap-4 justify-center p-6 w-full max-w-md md:max-w-xl lg:max-w-3xl bg-teal-50 shadow-lg rounded-xl"
+      >
+        <h1 class="font-bold text-lg md:text-xl text-center text-gray-800">
+          To-Do List
+        </h1>
+
+        <!-- Form -->
+        <form
+          id="todo-form"
+          class="bg-teal-50 shadow-md rounded-lg p-6 w-full max-w-3xl flex flex-col md:flex-row items-center gap-4"
+        >
+          <!-- Input Todo -->
+          <div class="flex-1 w-full">
+            <input
+              id="todo-input"
+              type="text"
+              placeholder="Add a todo..."
+              class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+          </div>
+          <!-- Input Tanggal -->
+          <div>
+            <input
+              id="todo-date"
+              type="date"
+              class="px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 cursor-pointer"
+            />
+          </div>
+          <!-- Button + -->
+          <div>
+            <button
+              type="submit"
+              class="bg-teal-600 text-white font-bold text-xl w-12 h-12 flex items-center justify-center rounded-full hover:bg-teal-700 transition cursor-pointer"
+            >
+              +
+            </button>
+          </div>
+        </form>
+
+        <!-- Search & Filter -->
+        <div
+          class="bg-teal-50 shadow-md rounded-lg p-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+        >
+          <!-- Search -->
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search todos..."
+            class="flex-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+          />
+          <!-- Filter Dropdown -->
+          <select
+            id="filter-select"
+            class="px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 cursor-pointer"
+          >
+            <option value="all">All</option>
+            <option value="complete">Complete</option>
+            <option value="incomplete">Incomplete</option>
+          </select>
+          <!-- Delete All -->
+          <button
+            id="delete-all"
+            class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 cursor-pointer"
+          >
+            Delete All
+          </button>
+        </div>
+
+        <!-- Todo List -->
+        <ul
+          id="todo-list"
+          class="bg-teal-50 shadow-md rounded-lg divide-y divide-gray-200"
+        ></ul>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-transparent">
+      <div class="max-w-4xl mx-auto text-center text-gray-600 text-sm">
+        © 2025 To-Do App — Created by
+        <a
+          href="https://www.instagram.com/ichsanfadhlika/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gray-800 hover:text-teal-600 font-medium transition"
+        >
+          Ichsan Fadhlika Pangestu
+        </a>
+      </div>
+    </footer>
+
+    <!-- Script.js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
